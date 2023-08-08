@@ -1,5 +1,4 @@
 {
-    "$schema": "http://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "description": "This is the challenge format schema used for our challenge repository.\nChallenges you submit to the codosseum challenges repository must adhere to this schema.",
     "required": [
