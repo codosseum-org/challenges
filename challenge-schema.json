@@ -8,8 +8,8 @@
         "title",
         "difficulty",
         "text",
-        "input_format",
-        "public_tests",
+        "inputFormat",
+        "publicTests",
         "solution"
     ],
     "properties": {
@@ -111,7 +111,7 @@
                 "Given an input of strings, compute the letter with the highest frequency that..."
             ]
         },
-        "input_format": {
+        "inputFormat": {
             "type": "string",
             "description": "A formal description of what inputs for this challenge look like.\nThis is required to generate secret tests and solution templates.\nTherefore, if this isn't specified, these things cannot be accomplished.\n\nRight now, the formal language for this field has not been specified yet,\nso it cannot be\n"
         },
@@ -122,7 +122,7 @@
                 "$ref": "#/$defs/test"
             }
         },
-        "public_tests": {
+        "publicTests": {
             "type": "array",
             "description": "Tests whose inputs and outputs will be made visible to the user.\nThese should cover most cases of the problem and test the user's code for different flaws. There should be more public tests than examples.\nA public test should have a name, and that name should indicate roughly what it is testing.\n\nTests specified in the examples do not have to be specified again here.\n",
             "minItems": 5,
