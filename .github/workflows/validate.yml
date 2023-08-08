@@ -1,0 +1,37 @@
+name: Validate YAMLs against JSON Schema
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pull-requests: write # enable write permissions for pull request comments
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON
+        uses: GrantBirki/json-yaml-validate@v1.5.0
+        with:
+          base_dir: challenges
+          json_schema: "challenge-schema.json"
+          yaml_as_json: "true" # enable YAML to JSON conversion
+  # TODO validate solution by looking at changed challenge files, extracting their solution and test info
+  # and submitting these to a code execution engine for verification. should probably write a separate script for this.
+  validate-solution:
+    runs-on: ubuntu-latest
+    needs: [ validate-schema ]
+    steps:
+      - uses: actions/checkout@v3
+  # TODO validate input format challenge field by extracting field from challenge files and asking templatespiler to validate the expressions
+  # Should probably write a separate action here too.
+  validate-input-format:
+    runs-on: ubuntu-latest
+    needs: [ validate-schema ]
+    steps:
+      - uses: actions/checkout@v3
