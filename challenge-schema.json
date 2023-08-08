@@ -30,6 +30,10 @@
                     "description": "(Optional) contact information of the author",
                     "items": {
                         "type": "object",
+                        "required": [
+                            "type",
+                            "contact"
+                        ],
                         "examples": [
                             {
                             "type": "email",
@@ -121,7 +125,7 @@
         "public_tests": {
             "type": "array",
             "description": "Tests whose inputs and outputs will be made visible to the user.\nThese should cover most cases of the problem and test the user's code for different flaws. There should be more public tests than examples.\nA public test should have a name, and that name should indicate roughly what it is testing.\n\nTests specified in the examples do not have to be specified again here.\n",
-            "minItems": 1,
+            "minItems": 5,
             "items": {
                 "$ref": "#/$defs/test"
             }
