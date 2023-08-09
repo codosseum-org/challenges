@@ -26,14 +26,14 @@ tags: []
 # Describe the challenge - explain what users have to do. Make use of multi-line strings: https://yaml-multiline.info/
 text: null
 # Define the format of the input expected by your described problem. Read more about the format for this field: https://github.com/codosseum-org/templatespiler
-input_format: null
+inputFormat: null
 # Provide one or more examples that will be shown to users (optional, but recommended)
 examples:
   - in: ["input", "lines", "here"]
     out: ["output", "lines", "here"]
 # Provide multiple (ideally, more than 10) test cases that are transparent to users.
 # You must provide at least 5. Use tests that differ from the examples
-public_tests:
+publicTests:
   - name: Basic test 1
     in: ["input", "lines", "here"]
     out: ["output", "lines", "here"]
