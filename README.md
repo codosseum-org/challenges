@@ -11,8 +11,8 @@ Do you want to contribute a challenge?
 1. Fork this repository
 2. Clone your version of the repository to your computer
 3. (Optional, but recommended): [set up pre-commit](#pre-commit) (see below) to ensure that your changes can be accepted.
-4. Create a new directory for your challenge under the `challenges/` directory of the repository, e.g. `my-challenge`
-5. Copy the [challenge template](./challenge-template.yml) file to your challenge directory under the name of your challenge, e.g. `cp challenge-template.yml challenges/my-challenge/my-challenge.yml`
+4. Create a new directory for your challenge under the `challenges/` directory of the repository, e.g. `my-challenge` (the name of the directory will be the unique ID of the challenge)
+5. Copy the [challenge template](./challenge-template.yml) file to your challenge directory under the name of your challenge, e.g. `cp challenge-template.yml challenges/my-challenge/challenge.yml`. The name of the file must be `challenge.yml`.
 6. Edit your challenge file, enter all the relevant information, create a solution in a language of your choice in the same directory
 7. Commit and push your changes
 8. [Open](https://github.com/codosseum-org/challenges/compare) a pull request
