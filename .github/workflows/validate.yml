@@ -1,4 +1,4 @@
-name: Validate YAMLs against JSON Schema
+name: Validate challenges
 
 on:
   push:
