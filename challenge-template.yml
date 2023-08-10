@@ -23,7 +23,7 @@ title: null
 difficulty: null
 # Tag/categorise your challenge if possible. See list of potential tags at https://github.com/codosseum-org/challenges
 tags: []
-# Describe the challenge - explain what users have to do. Make use of multi-line strings: https://yaml-multiline.info/
+# Describe the challenge - explain what users have to do. Make use of Markdown and multi-line strings: https://yaml-multiline.info/
 text: null
 # Define the format of the input expected by your described problem. Read more about the format for this field: https://github.com/codosseum-org/templatespiler
 inputFormat: null
