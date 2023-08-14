@@ -28,7 +28,7 @@ text: |
   - Any base between 2 and 16 is possible, not just "common" ones.
 
 
-input_format: "TODO"
+inputFormat: "TODO"
 
 examples:
   - in: ["3", "10", "12345"]
@@ -40,7 +40,7 @@ examples:
   - in: ["3", "10", "13408"]
     out: ["40813"]
 
-public_tests:
+publicTests:
   - name: Zero Rotation
     in: ["0", "10", "12345"]
     out: ["12345"]
